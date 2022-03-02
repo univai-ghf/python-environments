@@ -43,4 +43,4 @@ model.compile(loss='categorical_crossentropy', optimizer=config.optimizer,
 
 # Fit the model
 model.fit(X_train, y_train, validation_data=(X_test, y_test),
-        epochs=config.epochs])
+        epochs=config.epochs)
