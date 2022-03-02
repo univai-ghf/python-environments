@@ -1,0 +1,282 @@
+jovyan@jupyter-univai-2dghf-2dpython-2denvironments-2dhmcjuxnb:~$ mkdir newe
+jovyan@jupyter-univai-2dghf-2dpython-2denvironments-2dhmcjuxnb:~$ cd newe
+jovyan@jupyter-univai-2dghf-2dpython-2denvironments-2dhmcjuxnb:~/newe$ conda create -n newe
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: /srv/conda/envs/newe
+
+
+
+Proceed ([y]/n)? y
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate newe
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+jovyan@jupyter-univai-2dghf-2dpython-2denvironments-2dhmcjuxnb:~/newe$ conda activate newe
+(newe) jovyan@jupyter-univai-2dghf-2dpython-2denvironments-2dhmcjuxnb:~/newe$ conda install numpy pandas ipykernel
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: /srv/conda/envs/newe
+
+  added / updated specs:
+    - ipykernel
+    - numpy
+    - pandas
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    _libgcc_mutex-0.1          |      conda_forge           3 KB  conda-forge
+    _openmp_mutex-4.5          |            1_gnu          22 KB  conda-forge
+    asttokens-2.0.5            |     pyhd8ed1ab_0          21 KB  conda-forge
+    backcall-0.2.0             |     pyh9f0ad1d_0          13 KB  conda-forge
+    backports-1.0              |             py_2           4 KB  conda-forge
+    backports.functools_lru_cache-1.6.4|     pyhd8ed1ab_0           9 KB  conda-forge
+    black-22.1.0               |     pyhd8ed1ab_0         124 KB  conda-forge
+    bzip2-1.0.8                |       h7f98852_4         484 KB  conda-forge
+    ca-certificates-2021.10.8  |       ha878542_0         139 KB  conda-forge
+    click-8.0.4                |  py310hff52083_0         149 KB  conda-forge
+    dataclasses-0.8            |     pyhc8e2a94_3          10 KB  conda-forge
+    debugpy-1.5.1              |  py310h122e73d_0         2.0 MB  conda-forge
+    decorator-5.1.1            |     pyhd8ed1ab_0          12 KB  conda-forge
+    entrypoints-0.4            |     pyhd8ed1ab_0           9 KB  conda-forge
+    executing-0.8.3            |     pyhd8ed1ab_0          18 KB  conda-forge
+    ipykernel-6.9.1            |  py310hfdc917e_0         183 KB  conda-forge
+    ipython-8.0.1              |  py310hff52083_2         1.1 MB  conda-forge
+    jedi-0.18.1                |  py310hff52083_0        1016 KB  conda-forge
+    jupyter_client-7.1.2       |     pyhd8ed1ab_0          90 KB  conda-forge
+    jupyter_core-4.9.2         |  py310hff52083_0          81 KB  conda-forge
+    ld_impl_linux-64-2.36.1    |       hea4e1c9_2         667 KB  conda-forge
+    libblas-3.9.0              |13_linux64_openblas          12 KB  conda-forge
+    libcblas-3.9.0             |13_linux64_openblas          12 KB  conda-forge
+    libffi-3.4.2               |       h7f98852_5          57 KB  conda-forge
+    libgcc-ng-11.2.0           |      h1d223b6_12         904 KB  conda-forge
+    libgfortran-ng-11.2.0      |      h69a702a_12          19 KB  conda-forge
+    libgfortran5-11.2.0        |      h5c6108e_12         1.7 MB  conda-forge
+    libgomp-11.2.0             |      h1d223b6_12         426 KB  conda-forge
+    liblapack-3.9.0            |13_linux64_openblas          12 KB  conda-forge
+    libnsl-2.0.0               |       h7f98852_0          31 KB  conda-forge
+    libopenblas-0.3.18         |pthreads_h8fe5266_0         9.6 MB  conda-forge
+    libsodium-1.0.18           |       h36c2ea0_1         366 KB  conda-forge
+    libstdcxx-ng-11.2.0        |      he4da1e4_12         4.2 MB  conda-forge
+    libuuid-2.32.1             |    h7f98852_1000          28 KB  conda-forge
+    libzlib-1.2.11             |    h36c2ea0_1013          59 KB  conda-forge
+    matplotlib-inline-0.1.3    |     pyhd8ed1ab_0          11 KB  conda-forge
+    mypy_extensions-0.4.3      |  py310hff52083_4          10 KB  conda-forge
+    ncurses-6.3                |       h9c3ff4c_0        1012 KB  conda-forge
+    nest-asyncio-1.5.4         |     pyhd8ed1ab_0           9 KB  conda-forge
+    numpy-1.22.2               |  py310h454958d_0         6.9 MB  conda-forge
+    openssl-3.0.0              |       h7f98852_2         2.9 MB  conda-forge
+    pandas-1.4.1               |  py310hb5077e9_0        13.4 MB  conda-forge
+    parso-0.8.3                |     pyhd8ed1ab_0          69 KB  conda-forge
+    pathspec-0.9.0             |     pyhd8ed1ab_0          31 KB  conda-forge
+    pexpect-4.8.0              |     pyh9f0ad1d_2          47 KB  conda-forge
+    pickleshare-0.7.5          |          py_1003           9 KB  conda-forge
+    pip-22.0.3                 |     pyhd8ed1ab_0         1.5 MB  conda-forge
+    platformdirs-2.5.1         |     pyhd8ed1ab_0          15 KB  conda-forge
+    prompt-toolkit-3.0.27      |     pyha770c72_0         252 KB  conda-forge
+    ptyprocess-0.7.0           |     pyhd3deb0d_0          16 KB  conda-forge
+    pure_eval-0.2.2            |     pyhd8ed1ab_0          14 KB  conda-forge
+    pygments-2.11.2            |     pyhd8ed1ab_0         796 KB  conda-forge
+    python-3.10.2              |hc74c709_3_cpython        30.1 MB  conda-forge
+    python-dateutil-2.8.2      |     pyhd8ed1ab_0         240 KB  conda-forge
+    python_abi-3.10            |          2_cp310           4 KB  conda-forge
+    pytz-2021.3                |     pyhd8ed1ab_0         242 KB  conda-forge
+    pyzmq-22.3.0               |  py310h675a958_1         1.5 MB  conda-forge
+    readline-8.1               |       h46c0cb4_0         295 KB  conda-forge
+    setuptools-60.9.3          |  py310hff52083_0         1.2 MB  conda-forge
+    six-1.16.0                 |     pyh6c4a22f_0          14 KB  conda-forge
+    sqlite-3.37.0              |       h9cd32fc_0         1.5 MB  conda-forge
+    stack_data-0.2.0           |     pyhd8ed1ab_0          21 KB  conda-forge
+    tk-8.6.12                  |       h27826a3_0         3.3 MB  conda-forge
+    tomli-2.0.1                |     pyhd8ed1ab_0          16 KB  conda-forge
+    tornado-6.1                |  py310h6acc77f_2         667 KB  conda-forge
+    traitlets-5.1.1            |     pyhd8ed1ab_0          82 KB  conda-forge
+    typed-ast-1.5.2            |  py310h6acc77f_0         813 KB  conda-forge
+    typing_extensions-4.1.1    |     pyha770c72_0          29 KB  conda-forge
+    tzdata-2021e               |       he74cb21_0         121 KB  conda-forge
+    wcwidth-0.2.5              |     pyh9f0ad1d_2          33 KB  conda-forge
+    wheel-0.37.1               |     pyhd8ed1ab_0          31 KB  conda-forge
+    xz-5.2.5                   |       h516909a_1         343 KB  conda-forge
+    zeromq-4.3.4               |       h9c3ff4c_1         351 KB  conda-forge
+    zlib-1.2.11                |    h36c2ea0_1013          86 KB  conda-forge
+    ------------------------------------------------------------
+                                           Total:        91.2 MB
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      conda-forge/linux-64::_libgcc_mutex-0.1-conda_forge
+  _openmp_mutex      conda-forge/linux-64::_openmp_mutex-4.5-1_gnu
+  asttokens          conda-forge/noarch::asttokens-2.0.5-pyhd8ed1ab_0
+  backcall           conda-forge/noarch::backcall-0.2.0-pyh9f0ad1d_0
+  backports          conda-forge/noarch::backports-1.0-py_2
+  backports.functoo~ conda-forge/noarch::backports.functools_lru_cache-1.6.4-pyhd8ed1ab_0
+  black              conda-forge/noarch::black-22.1.0-pyhd8ed1ab_0
+  bzip2              conda-forge/linux-64::bzip2-1.0.8-h7f98852_4
+  ca-certificates    conda-forge/linux-64::ca-certificates-2021.10.8-ha878542_0
+  click              conda-forge/linux-64::click-8.0.4-py310hff52083_0
+  dataclasses        conda-forge/noarch::dataclasses-0.8-pyhc8e2a94_3
+  debugpy            conda-forge/linux-64::debugpy-1.5.1-py310h122e73d_0
+  decorator          conda-forge/noarch::decorator-5.1.1-pyhd8ed1ab_0
+  entrypoints        conda-forge/noarch::entrypoints-0.4-pyhd8ed1ab_0
+  executing          conda-forge/noarch::executing-0.8.3-pyhd8ed1ab_0
+  ipykernel          conda-forge/linux-64::ipykernel-6.9.1-py310hfdc917e_0
+  ipython            conda-forge/linux-64::ipython-8.0.1-py310hff52083_2
+  jedi               conda-forge/linux-64::jedi-0.18.1-py310hff52083_0
+  jupyter_client     conda-forge/noarch::jupyter_client-7.1.2-pyhd8ed1ab_0
+  jupyter_core       conda-forge/linux-64::jupyter_core-4.9.2-py310hff52083_0
+  ld_impl_linux-64   conda-forge/linux-64::ld_impl_linux-64-2.36.1-hea4e1c9_2
+  libblas            conda-forge/linux-64::libblas-3.9.0-13_linux64_openblas
+  libcblas           conda-forge/linux-64::libcblas-3.9.0-13_linux64_openblas
+  libffi             conda-forge/linux-64::libffi-3.4.2-h7f98852_5
+  libgcc-ng          conda-forge/linux-64::libgcc-ng-11.2.0-h1d223b6_12
+  libgfortran-ng     conda-forge/linux-64::libgfortran-ng-11.2.0-h69a702a_12
+  libgfortran5       conda-forge/linux-64::libgfortran5-11.2.0-h5c6108e_12
+  libgomp            conda-forge/linux-64::libgomp-11.2.0-h1d223b6_12
+  liblapack          conda-forge/linux-64::liblapack-3.9.0-13_linux64_openblas
+  libnsl             conda-forge/linux-64::libnsl-2.0.0-h7f98852_0
+  libopenblas        conda-forge/linux-64::libopenblas-0.3.18-pthreads_h8fe5266_0
+  libsodium          conda-forge/linux-64::libsodium-1.0.18-h36c2ea0_1
+  libstdcxx-ng       conda-forge/linux-64::libstdcxx-ng-11.2.0-he4da1e4_12
+  libuuid            conda-forge/linux-64::libuuid-2.32.1-h7f98852_1000
+  libzlib            conda-forge/linux-64::libzlib-1.2.11-h36c2ea0_1013
+  matplotlib-inline  conda-forge/noarch::matplotlib-inline-0.1.3-pyhd8ed1ab_0
+  mypy_extensions    conda-forge/linux-64::mypy_extensions-0.4.3-py310hff52083_4
+  ncurses            conda-forge/linux-64::ncurses-6.3-h9c3ff4c_0
+  nest-asyncio       conda-forge/noarch::nest-asyncio-1.5.4-pyhd8ed1ab_0
+  numpy              conda-forge/linux-64::numpy-1.22.2-py310h454958d_0
+  openssl            conda-forge/linux-64::openssl-3.0.0-h7f98852_2
+  pandas             conda-forge/linux-64::pandas-1.4.1-py310hb5077e9_0
+  parso              conda-forge/noarch::parso-0.8.3-pyhd8ed1ab_0
+  pathspec           conda-forge/noarch::pathspec-0.9.0-pyhd8ed1ab_0
+  pexpect            conda-forge/noarch::pexpect-4.8.0-pyh9f0ad1d_2
+  pickleshare        conda-forge/noarch::pickleshare-0.7.5-py_1003
+  pip                conda-forge/noarch::pip-22.0.3-pyhd8ed1ab_0
+  platformdirs       conda-forge/noarch::platformdirs-2.5.1-pyhd8ed1ab_0
+  prompt-toolkit     conda-forge/noarch::prompt-toolkit-3.0.27-pyha770c72_0
+  ptyprocess         conda-forge/noarch::ptyprocess-0.7.0-pyhd3deb0d_0
+  pure_eval          conda-forge/noarch::pure_eval-0.2.2-pyhd8ed1ab_0
+  pygments           conda-forge/noarch::pygments-2.11.2-pyhd8ed1ab_0
+  python             conda-forge/linux-64::python-3.10.2-hc74c709_3_cpython
+  python-dateutil    conda-forge/noarch::python-dateutil-2.8.2-pyhd8ed1ab_0
+  python_abi         conda-forge/linux-64::python_abi-3.10-2_cp310
+  pytz               conda-forge/noarch::pytz-2021.3-pyhd8ed1ab_0
+  pyzmq              conda-forge/linux-64::pyzmq-22.3.0-py310h675a958_1
+  readline           conda-forge/linux-64::readline-8.1-h46c0cb4_0
+  setuptools         conda-forge/linux-64::setuptools-60.9.3-py310hff52083_0
+  six                conda-forge/noarch::six-1.16.0-pyh6c4a22f_0
+  sqlite             conda-forge/linux-64::sqlite-3.37.0-h9cd32fc_0
+  stack_data         conda-forge/noarch::stack_data-0.2.0-pyhd8ed1ab_0
+  tk                 conda-forge/linux-64::tk-8.6.12-h27826a3_0
+  tomli              conda-forge/noarch::tomli-2.0.1-pyhd8ed1ab_0
+  tornado            conda-forge/linux-64::tornado-6.1-py310h6acc77f_2
+  traitlets          conda-forge/noarch::traitlets-5.1.1-pyhd8ed1ab_0
+  typed-ast          conda-forge/linux-64::typed-ast-1.5.2-py310h6acc77f_0
+  typing_extensions  conda-forge/noarch::typing_extensions-4.1.1-pyha770c72_0
+  tzdata             conda-forge/noarch::tzdata-2021e-he74cb21_0
+  wcwidth            conda-forge/noarch::wcwidth-0.2.5-pyh9f0ad1d_2
+  wheel              conda-forge/noarch::wheel-0.37.1-pyhd8ed1ab_0
+  xz                 conda-forge/linux-64::xz-5.2.5-h516909a_1
+  zeromq             conda-forge/linux-64::zeromq-4.3.4-h9c3ff4c_1
+  zlib               conda-forge/linux-64::zlib-1.2.11-h36c2ea0_1013
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+jupyter_client-7.1.2 | 90 KB     | #################################################################################################### | 100% 
+libgfortran5-11.2.0  | 1.7 MB    | #################################################################################################### | 100% 
+libcblas-3.9.0       | 12 KB     | #################################################################################################### | 100% 
+libzlib-1.2.11       | 59 KB     | #################################################################################################### | 100% 
+six-1.16.0           | 14 KB     | #################################################################################################### | 100% 
+traitlets-5.1.1      | 82 KB     | #################################################################################################### | 100% 
+matplotlib-inline-0. | 11 KB     | #################################################################################################### | 100% 
+prompt-toolkit-3.0.2 | 252 KB    | #################################################################################################### | 100% 
+libopenblas-0.3.18   | 9.6 MB    | #################################################################################################### | 100% 
+mypy_extensions-0.4. | 10 KB     | #################################################################################################### | 100% 
+bzip2-1.0.8          | 484 KB    | #################################################################################################### | 100% 
+stack_data-0.2.0     | 21 KB     | #################################################################################################### | 100% 
+decorator-5.1.1      | 12 KB     | #################################################################################################### | 100% 
+pip-22.0.3           | 1.5 MB    | #################################################################################################### | 100% 
+libnsl-2.0.0         | 31 KB     | #################################################################################################### | 100% 
+parso-0.8.3          | 69 KB     | #################################################################################################### | 100% 
+typing_extensions-4. | 29 KB     | #################################################################################################### | 100% 
+ipykernel-6.9.1      | 183 KB    | #################################################################################################### | 100% 
+black-22.1.0         | 124 KB    | #################################################################################################### | 100% 
+wcwidth-0.2.5        | 33 KB     | #################################################################################################### | 100% 
+zeromq-4.3.4         | 351 KB    | #################################################################################################### | 100% 
+ncurses-6.3          | 1012 KB   | #################################################################################################### | 100% 
+jedi-0.18.1          | 1016 KB   | #################################################################################################### | 100% 
+_openmp_mutex-4.5    | 22 KB     | #################################################################################################### | 100% 
+_libgcc_mutex-0.1    | 3 KB      | #################################################################################################### | 100% 
+ca-certificates-2021 | 139 KB    | #################################################################################################### | 100% 
+zlib-1.2.11          | 86 KB     | #################################################################################################### | 100% 
+sqlite-3.37.0        | 1.5 MB    | #################################################################################################### | 100% 
+asttokens-2.0.5      | 21 KB     | #################################################################################################### | 100% 
+setuptools-60.9.3    | 1.2 MB    | #################################################################################################### | 100% 
+dataclasses-0.8      | 10 KB     | #################################################################################################### | 100% 
+pexpect-4.8.0        | 47 KB     | #################################################################################################### | 100% 
+tzdata-2021e         | 121 KB    | #################################################################################################### | 100% 
+pathspec-0.9.0       | 31 KB     | #################################################################################################### | 100% 
+ptyprocess-0.7.0     | 16 KB     | #################################################################################################### | 100% 
+libsodium-1.0.18     | 366 KB    | #################################################################################################### | 100% 
+platformdirs-2.5.1   | 15 KB     | #################################################################################################### | 100% 
+libgfortran-ng-11.2. | 19 KB     | #################################################################################################### | 100% 
+jupyter_core-4.9.2   | 81 KB     | #################################################################################################### | 100% 
+pandas-1.4.1         | 13.4 MB   | #################################################################################################### | 100% 
+xz-5.2.5             | 343 KB    | #################################################################################################### | 100% 
+backports-1.0        | 4 KB      | #################################################################################################### | 100% 
+wheel-0.37.1         | 31 KB     | #################################################################################################### | 100% 
+python_abi-3.10      | 4 KB      | #################################################################################################### | 100% 
+pytz-2021.3          | 242 KB    | #################################################################################################### | 100% 
+click-8.0.4          | 149 KB    | #################################################################################################### | 100% 
+pyzmq-22.3.0         | 1.5 MB    | #################################################################################################### | 100% 
+nest-asyncio-1.5.4   | 9 KB      | #################################################################################################### | 100% 
+pure_eval-0.2.2      | 14 KB     | #################################################################################################### | 100% 
+libgcc-ng-11.2.0     | 904 KB    | #################################################################################################### | 100% 
+readline-8.1         | 295 KB    | #################################################################################################### | 100% 
+python-3.10.2        | 30.1 MB   | #################################################################################################### | 100% 
+typed-ast-1.5.2      | 813 KB    | #################################################################################################### | 100% 
+backcall-0.2.0       | 13 KB     | #################################################################################################### | 100% 
+pickleshare-0.7.5    | 9 KB      | #################################################################################################### | 100% 
+debugpy-1.5.1        | 2.0 MB    | #################################################################################################### | 100% 
+backports.functools_ | 9 KB      | #################################################################################################### | 100% 
+libstdcxx-ng-11.2.0  | 4.2 MB    | #################################################################################################### | 100% 
+openssl-3.0.0        | 2.9 MB    | #################################################################################################### | 100% 
+libffi-3.4.2         | 57 KB     | #################################################################################################### | 100% 
+ld_impl_linux-64-2.3 | 667 KB    | #################################################################################################### | 100% 
+tk-8.6.12            | 3.3 MB    | #################################################################################################### | 100% 
+executing-0.8.3      | 18 KB     | #################################################################################################### | 100% 
+python-dateutil-2.8. | 240 KB    | #################################################################################################### | 100% 
+libblas-3.9.0        | 12 KB     | #################################################################################################### | 100% 
+numpy-1.22.2         | 6.9 MB    | #################################################################################################### | 100% 
+tomli-2.0.1          | 16 KB     | #################################################################################################### | 100% 
+libuuid-2.32.1       | 28 KB     | #################################################################################################### | 100% 
+tornado-6.1          | 667 KB    | #################################################################################################### | 100% 
+pygments-2.11.2      | 796 KB    | #################################################################################################### | 100% 
+entrypoints-0.4      | 9 KB      | #################################################################################################### | 100% 
+libgomp-11.2.0       | 426 KB    | #################################################################################################### | 100% 
+liblapack-3.9.0      | 12 KB     | #################################################################################################### | 100% 
+ipython-8.0.1        | 1.1 MB    | #################################################################################################### | 100% 
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+(newe) jovyan@jupyter-univai-2dghf-2dpython-2denvironments-2dhmcjuxnb:~/newe$ 
