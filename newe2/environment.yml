@@ -1,0 +1,12 @@
+channels:
+- conda-forge
+dependencies:
+- ipykernel
+- matplotlib
+- pandas
+- numpy
+- scipy
+- seaborn
+- scikit-learn
+- tensorflow
+- keras
