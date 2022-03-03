@@ -339,11 +339,11 @@ dependencies:
 
 ## An example
 
-- We do: `cookiecutter gh:drivendata/cookiecutter-data-science`
+- We do: `cookiecutter gh:patrickmineault/true-neutral-cookiecutter`
 - name the project perceptron
 - create the conda environment:
 - `conda create --name perceptron; conda activate perceptron; mamba install ipykernel numpy tensorflow keras` or do `mamba env create` with an appropriate environment file
-- then do `pip install -e .` which creates the src directory loadable into python
+- then do `cd perceptron; pip install -e .` which creates the src directory loadable into python
 
 ---
 
