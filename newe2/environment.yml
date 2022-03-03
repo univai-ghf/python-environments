@@ -1,3 +1,4 @@
+name: newe2
 channels:
 - conda-forge
 dependencies:
