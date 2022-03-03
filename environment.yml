@@ -4,5 +4,5 @@ dependencies:
 - pip
 #- jupyterlab
 - nb_conda_kernels
-pip:
-- cookiecutter
+- pip:
+  - cookiecutter
