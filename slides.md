@@ -1,6 +1,6 @@
 autoscale: true
 
-Python Environments
+#[fit] Python Environments
 
 ---
 
@@ -236,7 +236,7 @@ dependencies:
 
 - create a conda environment for each new project
 - put an `environment.yml` in each project folder (like `newe2`) with a `name` line reflecting the folder name
-- `conda env create` in project folder (like `newe2`)
+- `conda|mamba env create` in project folder (like `newe2`)
 - if not per project, at least have one for each new class, or class of projects
 - environment for class of projects may grow organically, but capture its requirements from time-to-time.
 - for example, on my dual-gpu machine, I have 3 separate environments for pytorch, tensorflow, and jax, as they even had slightly different CUDA requirements.
@@ -253,6 +253,7 @@ see [here](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-env
 - use `conda` to activate/deactivate
 - See [https://mamba.readthedocs.io/en/latest/user_guide/mamba.html](https://mamba.readthedocs.io/en/latest/user_guide/mamba.html)
 - on our binder environment I can issue `mamba env create`. Its faster. But then I must use `conda activate newe2` to startup the new environment
+- by default conda will use both default and conda-forge channels, mamba will use conda-forge. I found keras currently only installable with mamba.
 
 ---
 
@@ -293,6 +294,75 @@ dependencies:
 - https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/
 - https://goodresearch.dev/setup.html , which is part of the excellent book
 - https://goodresearch.dev/index.html
+
+---
+
+# [fit] 3. Structure
+
+---
+
+## The Importance of Structure
+
+- one might as well use the one env per project ot set-of-projects structure to organize work
+- it is really important to organize your data science work well
+- a good tool for this is `cookiecutter`, which sets up a template folder structure for you. Install by `pip install cookiecutter` in your base.
+- you install a cookiecutter by doing `cookiecutter source`.
+
+---
+
+## Two nice cookiecutters
+
+- https://github.com/patrickmineault/true-neutral-cookiecutter
+- Install via: `cookiecutter gh:patrickmineault/true-neutral-cookiecutter`
+- https://drivendata.github.io/cookiecutter-data-science/
+- Install via: `cookiecutter gh:drivendata/cookiecutter-data-science`
+
+---
+
+## True Neutral Cookiecutter
+
+```
+├── data
+├── doc
+├── results
+├── scripts
+├── src
+│   └── __init__.py
+├── tests
+├── .gitignore
+├── environment.yml
+├── README.md
+└── setup.py
+```
+
+---
+
+## An example
+
+- We do: `cookiecutter gh:drivendata/cookiecutter-data-science`
+- name the project perceptron
+- create the conda environment:
+- `conda create --name perceptron; conda activate perceptron; mamba install ipykernel numpy tensorflow keras` or do `mamba env create` with an appropriate environment file
+- then do `pip install -e .` which creates the src directory loadable into python
+
+---
+
+## Best practices for use
+
+- now we can do development with both the notebook and files. In anotebook cell put the following to have the notebook automatically reload the file when it changes.
+
+```
+%load_ext autoreload
+%autoreload 2
+```
+
+- refactor anything repeated multiple times to python files with functions in them. Notebooks should be very readable
+- output all intermediate files into `data` or `results` while writing your pipelines: files from train test splits, parameter values and results, etc
+- future you will than current you.
+
+---
+
+#[fit] 4. Extra
 
 ---
 
