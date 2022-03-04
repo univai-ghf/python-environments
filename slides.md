@@ -118,7 +118,7 @@ if __name__=='__main__':
 ## How this workshop will run
 
 - We are not going to bother with the initial anaconda/miniconda/miniforge installation: this will take too much time. If you dont have such a system, install it and let us know on the community forum. We can help you.
-- Instead, ee have set up a `conda-forge` based Jupyterlab installation for you at: [https://mybinder.org/v2/gh/univai-ghf/python-environments/HEAD](https://mybinder.org/v2/gh/univai-ghf/python-environments/HEAD). This uses the mybinder.org service. Click on the link to have a python environment set up for you in the cloud. You will get a web browser that looks like this:
+- Instead, we have set up a `conda-forge` based Jupyterlab installation for you at: [https://mybinder.org/v2/gh/univai-ghf/python-environments/HEAD](https://mybinder.org/v2/gh/univai-ghf/python-environments/HEAD). This uses the mybinder.org service. Click on the link to have a python environment set up for you in the cloud. You will get a web browser that looks like this:
 
 ---
 
@@ -358,7 +358,7 @@ dependencies:
 
 - refactor anything repeated multiple times to python files with functions in them. Notebooks should be very readable
 - output all intermediate files into `data` or `results` while writing your pipelines: files from train test splits, parameter values and results, etc
-- future you will than current you.
+- future you will thank the current you.
 
 ---
 
